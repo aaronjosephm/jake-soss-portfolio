@@ -30,14 +30,28 @@ class HomeComponent extends Component {
 	}
 
 	render () {
+		const isMobile = window.innerWidth <= 600 ? true : false;
+
 		return (
 			<div>
-			  <HeadShot 
-			    image={headShot}
-			  />
-			 <Title>
-			 	Aspiring Actor | Jake Soss
-			 </Title>
+			  {isMobile ? 
+			  	(<div>
+				  	<Title>
+				 	    Aspiring Actor | Jake Soss
+				    </Title>
+				    <HeadShot 
+				      image={headShot}
+				     /> 
+			     </div>) : 
+			     (<div>
+				     <HeadShot 
+				      image={headShot}
+				     /> 
+				     <Title>
+				 	   Aspiring Actor | Jake Soss
+				     </Title>
+			     </div>)
+			   }
 			 <br />
 			 <br />
 			 <br />

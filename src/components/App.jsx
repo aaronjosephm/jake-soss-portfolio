@@ -46,6 +46,8 @@ class App extends Component {
   }
 
   render() {
+    const isMobile = window.innerWidth <= 600 ? true : false;
+
     const { currentComponent } = this.state;
     return (
       <div>

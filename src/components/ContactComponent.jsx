@@ -131,11 +131,72 @@ class ContactComponent extends Component {
 	    return form_data.join("&");
 		}
 
+	renderNameAndEmailFields() {
+		const { errorMessages, email, name } = this.state;
+		return (
+			<div>
+				<FormGroup> 
+			    {errorMessages.name ?
+		      <Input
+		        placeholder="Name field cannot be blank!"
+		        error={errorMessages.name}
+		        value={name} 
+		        onChange={({ target: { value } }) => {
+			        	this.setState({ name: value})
+			        	this.validateField('name')
+		          }
+		        }
+		        id={'name'}
+		        /> : 
+		        <Input
+		        placeholder="Please provide your name"
+		        error={errorMessages.name}
+		        value={name} 
+		        onChange={({ target: { value } }) => {
+			        	this.setState({ name: value})
+			        	this.validateField('name')
+		          }
+		        }
+		        id={'name'}
+		        />}
+	      </FormGroup>
+		    <FormGroup>
+		      {errorMessages.email ?
+		      <Input
+		        placeholder="Please enter a valid email!"
+		        error={errorMessages.email}
+		        value={email}
+		        onChange={({ target: { value } }) => {
+			        	this.setState({ email: value})
+			        	this.validateField('email')
+		          }
+		        }
+		        id={'email'}
+		        /> :
+		        <Input
+		        placeholder="Please provide your email"
+		        error={errorMessages.email}
+		        value={email}
+		        onChange={({ target: { value } }) => {
+			        	this.setState({ email: value})
+			        	this.validateField('email')
+		          }
+		        }
+		        id={'email'}
+		        /> }
+	      </FormGroup>
+      </div>
+		);
+	}
+
 
 	render () {
 		const { name, email, message, errorMessages } = this.state;
 
+		const isMobile = window.innerWidth <= 600 ? true : false;
+
 		const msg1 = 'Please feel free to reach out at any time! You can call me directly at XXX-XXX-XXXX, or you can send me an email through my nifty contact form. '
+		const msg2 = 'Be sure to leave your name and email so I can get back to you!';
 		return (
 			<div>
 			  <ContactTitle>
@@ -148,61 +209,64 @@ class ContactComponent extends Component {
 			  </ContactContent>
         <ContactContent2>
 			    <p>
-			      &nbsp;&nbsp;&nbsp;&nbsp;Be sure to leave your name and email so I can get back to you!
+			      &nbsp;&nbsp;&nbsp;&nbsp;{msg2}
 			    </p>
 			  </ContactContent2>
-			  <NameAndEmail>
-				  <FormGroup> 
-				    {errorMessages.name ?
-			      <Input
-			        placeholder="Name field cannot be blank!"
-			        error={errorMessages.name}
-			        value={name} 
-			        onChange={({ target: { value } }) => {
-				        	this.setState({ name: value})
-				        	this.validateField('name')
-			          }
-			        }
-			        id={'name'}
-			        /> : 
-			        <Input
-			        placeholder="Please provide your name"
-			        error={errorMessages.name}
-			        value={name} 
-			        onChange={({ target: { value } }) => {
-				        	this.setState({ name: value})
-				        	this.validateField('name')
-			          }
-			        }
-			        id={'name'}
-			        />}
-	        </FormGroup>
-			    <FormGroup>
-			      {errorMessages.email ?
-			      <Input
-			        placeholder="Please enter a valid email!"
-			        error={errorMessages.email}
-			        value={email}
-			        onChange={({ target: { value } }) => {
-				        	this.setState({ email: value})
-				        	this.validateField('email')
-			          }
-			        }
-			        id={'email'}
-			        /> :
-			        <Input
-			        placeholder="Please provide your email"
-			        error={errorMessages.email}
-			        value={email}
-			        onChange={({ target: { value } }) => {
-				        	this.setState({ email: value})
-				        	this.validateField('email')
-			          }
-			        }
-			        id={'email'}
-			        /> }
-	        </FormGroup>
-        </NameAndEmail>
+			  {isMobile ?
+			  	this.renderNameAndEmailFields() :
+	        (<NameAndEmail>
+					  <FormGroup> 
+					    {errorMessages.name ?
+				      <Input
+				        placeholder="Name field cannot be blank!"
+				        error={errorMessages.name}
+				        value={name} 
+				        onChange={({ target: { value } }) => {
+					        	this.setState({ name: value})
+					        	this.validateField('name')
+				          }
+				        }
+				        id={'name'}
+				        /> : 
+				        <Input
+				        placeholder="Please provide your name"
+				        error={errorMessages.name}
+				        value={name} 
+				        onChange={({ target: { value } }) => {
+					        	this.setState({ name: value})
+					        	this.validateField('name')
+				          }
+				        }
+				        id={'name'}
+				        />}
+			      </FormGroup>
+				    <FormGroup>
+				      {errorMessages.email ?
+				      <Input
+				        placeholder="Please enter a valid email!"
+				        error={errorMessages.email}
+				        value={email}
+				        onChange={({ target: { value } }) => {
+					        	this.setState({ email: value})
+					        	this.validateField('email')
+				          }
+				        }
+				        id={'email'}
+				        /> :
+				        <Input
+				        placeholder="Please provide your email"
+				        error={errorMessages.email}
+				        value={email}
+				        onChange={({ target: { value } }) => {
+					        	this.setState({ email: value})
+					        	this.validateField('email')
+				          }
+				        }
+				        id={'email'}
+				        /> }
+			      </FormGroup>
+	        </NameAndEmail>)
+			  }
         <MessageBox>
 	        <FormGroupMessage>
 			      <TextArea 

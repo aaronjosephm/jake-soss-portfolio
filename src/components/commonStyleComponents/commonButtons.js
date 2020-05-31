@@ -27,6 +27,10 @@ export const SendButtonWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 425px) {
+    margin-bottom: 15vh;
+  }
 `;
 
 export const SendButton = styled.button`

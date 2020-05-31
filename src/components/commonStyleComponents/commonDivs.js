@@ -18,6 +18,15 @@ export const HomeContent = styled.div`
     font-weight: bold !important;
     color: #37352F;
   }
+
+  @media (max-width: 425px) {
+    left: 0px;
+    top: 0px;
+    position: relative;
+    width: 80vw;
+    margin-left: 10vw;
+    margin-bottom: 13vh;
+  }
 `;
 
 export const ContactTitle = styled.div`
@@ -32,6 +41,14 @@ export const ContactTitle = styled.div`
   color: #37352F;
   height: 60px;
   border-bottom: 26px solid #E0D9C6;
+
+  @media (max-width: 425px) {
+    font-size: 25px;
+    width: 80vw;
+    border-bottom: 16px solid #E0D9C6;
+    height: 40px;
+    margin-left: 10vw;
+  }
 `;
 
 export const ShowTitle = styled.div`
@@ -44,6 +61,12 @@ export const ShowTitle = styled.div`
   font-size: 40px;
   color: #37352F;
   height: 60px;
+
+  @media (max-width: 425px) {
+    margin-left: 10vw;
+    width: 80vw;
+    font-size: 25px;
+  }
 `;
 
 export const ContactContent2 = styled.div`
@@ -57,6 +80,17 @@ export const ContactContent2 = styled.div`
     font-size: 20px !important;
     font-weight: bold !important;
     color: #37352F;
+  }
+
+  @media (max-width: 425px) {
+    position: relative;
+    margin-top: 1vh;
+    margin-left: 5vw;
+    width: 90vw;
+
+    & p {
+      font-size: 12px !important;
+    }
   }
 `;
 
@@ -72,6 +106,17 @@ export const ContactContent = styled.div`
     font-weight: bold !important;
     color: #37352F;
   }
+
+  @media (max-width: 425px) {
+    position: relative;
+    margin-top: 3vh;
+    margin-left: 5vw;
+    width: 90vw;
+
+    & p {
+      font-size: 12px !important;
+    }
+  }
 `;
 
 export const ShowContent = styled.div`
@@ -85,6 +130,13 @@ export const ShowContent = styled.div`
     font-size: 14px !important;
     font-weight: bold !important;
     color: #37352F;
+  }
+
+  @media (max-width: 425px) {
+    margin-left: 10vw;
+    margin-top: 2vh;
+    width: 80vw;
+    font-size: 25px;
   }
 `;
 
@@ -100,6 +152,12 @@ export const EventsTitle = styled.div`
   color: #37352F;
   height: 60px;
   border-bottom: 26px solid #E0D9C6;
+
+  @media (max-width: 425px) {
+    height: 40px;
+    font-size: 25px;
+    border-bottom: 16px solid #E0D9C6;
+  }
 `;
 
 export const EventsTitle2 = styled.div`
@@ -114,6 +172,14 @@ export const EventsTitle2 = styled.div`
   color: #37352F;
   height: 60px;
   border-bottom: 26px solid #E0D9C6;
+
+  @media (max-width: 425px) {
+    height: 40px;
+    margin-left: 20vw;
+    width: 60vw;
+    font-size: 25px;
+    border-bottom: 16px solid #E0D9C6;
+  }
 `;
 
 
@@ -129,12 +195,18 @@ export const Title = styled.div`
   color: #37352F;
   height: 60px;
   border-bottom: 26px solid #E0D9C6;
-`;
 
-export const AboutTitle = styled.div`
-  margin-top: 40px;
-  margin-bottom: 50px;
-  padding-left: 100px;
+  @media (max-width: 425px) {
+    right: 0px;
+    top: 0px;
+    position: relative;
+    margin-top: 10vh;
+    margin-left: 10vw;
+    width: 80vw;
+    height: 40px;
+    font-size: 25px;
+    border-bottom: 16px solid #E0D9C6;
+  }
 `;
 
 export const PlayImage1 = styled.div`
@@ -146,11 +218,16 @@ export const PlayImage1 = styled.div`
   margin-left: 40vw;
   margin-top: 5vh;
   background-repeat: no-repeat;
-  width: 258px;
+  width: 20vw;
   height: 386px;
   padding-left: 100px;
   z-index: 100;
   position: relative;
+
+  @media (max-width: 425px) {
+    margin-left: 20vw;
+    width: 60vw;
+  }
 `;
 
 export const PlayImage3 = styled.div`
@@ -167,6 +244,11 @@ export const PlayImage3 = styled.div`
   padding-left: 100px;
   z-index: 100;
   position: relative;
+
+  @media (max-width: 425px) {
+    margin-left: 5vw;
+    width: 90vw;
+  }
 `;
 
 export const PlayImage4 = styled.div`
@@ -183,6 +265,11 @@ export const PlayImage4 = styled.div`
   padding-left: 100px;
   z-index: 100;
   position: relative;
+
+  @media (max-width: 425px) {
+    margin-left: 5vw;
+    width: 90vw;
+  }
 `;
 
 export const HeadShot = styled.div`
@@ -199,6 +286,16 @@ export const HeadShot = styled.div`
   z-index: 100;
   position: absolute;
   top: 86px;
+
+  @media (max-width: 425px) {
+    padding-left: 0px;
+    position: relative;
+    margin-top: 5vh;
+    margin-left: 10vw;
+    width: 80vw;
+    left: 0px;
+    top: 0px;
+  }
 `;
 
 export const SubText = styled.div`
@@ -256,12 +353,22 @@ export const NameAndEmail = styled.div`
   justify-content: space-between;
   width: 40vw;
   margin-left: 45vw;
+
+  @media (max-width: 425px) {
+    margin-left: 0px;
+  }
 `;
 
 export const MessageBox = styled.div`
   display: flex;
   width: 50vw;
   margin-left: 40vw;
+
+  @media (max-width: 425px) {
+    postion: relative;
+    margin-left: 5vw;
+    width: 90vw;
+  }
 `;
 
 export const FormGroup = styled.div`
@@ -270,6 +377,13 @@ export const FormGroup = styled.div`
   width: 18vw;
   margin-bottom: 5vh;
   margin-top: 5vh;
+
+  @media (max-width: 425px) {
+    postion: relative;
+    margin-left: 5vw;
+    width: 90vw;
+    display: flex;
+  }
 `;
 
 export const FormGroupMessage = styled.div`
@@ -278,6 +392,10 @@ export const FormGroupMessage = styled.div`
 	width: 40vw;
 	margin: auto;
 	margin-bottom: 30px;
+
+  @media (max-width: 425px) {
+    width: 100%;
+  }
 `;
 
 export const Label = styled.label`
