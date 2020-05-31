@@ -2,16 +2,15 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import '../assets/stylesheets/App.css';
 import HomeComponent from './HomeComponent';
-import AboutComponent from './AboutComponent';
+import EventsComponent from './EventsComponent';
 import ContactComponent from './ContactComponent';
 import { NavButton, CommonButtonTest } from './commonStyleComponents/commonButtons';
-import { Navbar } from './commonStyleComponents/commonHeaders';
+import { Navbar, NavbarName, Footer, SubFooter } from './commonStyleComponents/commonHeaders';
 import { Title, Content } from './commonStyleComponents/commonDivs';
 
 const NAV_DEFAULTS = [
   'HOME',
-  'ABOUT',
-  'UPCOMING EVENTS',
+  'EVENTS',
   'CONTACT'
 ]
 
@@ -27,12 +26,10 @@ class App extends Component {
         return (
           <HomeComponent />
         )
-      case 'ABOUT':
+      case 'EVENTS': 
         return (
-          <AboutComponent />
-        )
-      case 'UPCOMING EVENTS': 
-        return null;
+          <EventsComponent />
+          )
       case 'CONTACT':
         return (
             <ContactComponent />
@@ -53,48 +50,42 @@ class App extends Component {
     return (
       <div>
         <Navbar>
-          <nav>
-            <ul>
-              <ol> 
-                <p>
-                  <a 
-                    href="#" 
-                    className="btn btn-outline"
-                    onClick={(e) => this.handleMenuClick(e, 0)}
-                     >Home</a>
-                  </p>
-              </ol>
-              <ol>
-                <p>
-                  <a 
-                    href="#" 
-                    className="btn btn-outline"
-                    onClick={(e) => this.handleMenuClick(e, 1)}
-                     >Jake Who?</a>
-                  </p>
-              </ol>
-              <ol>
-                <p>
-                  <a 
-                    href="#" 
-                    className="btn btn-outline"
-                    onClick={(e) => this.handleMenuClick(e, 2)}
-                     >Events</a>
+          <ul>
+            <ol> 
+              <p>
+                <a 
+                  href="#" 
+                  className="btn btn-outline"
+                  onClick={(e) => this.handleMenuClick(e, 0)}
+                   >Home</a>
                 </p>
-              </ol>
-              <ol>
-                <p>
-                  <a 
-                    href="#" 
-                    className="btn btn-outline"
-                    onClick={(e) => this.handleMenuClick(e, 3)}
-                     >Contact</a>
-                </p>
-              </ol>
-            </ul>
-          </nav>
+            </ol>
+            <ol>
+              <p>
+                <a 
+                  href="#" 
+                  className="btn btn-outline"
+                  onClick={(e) => this.handleMenuClick(e, 1)}
+                   >Events</a>
+              </p>
+            </ol>
+            <ol>
+              <p>
+                <a 
+                  href="#" 
+                  className="btn btn-outline"
+                  onClick={(e) => this.handleMenuClick(e, 2)}
+                   >Contact</a>
+              </p>
+            </ol>
+          </ul>
+          <NavbarName>
+            Jake Soss
+          </NavbarName>
         </Navbar>
         {this.renderComponent()}
+        <Footer />
+        <SubFooter />
       </div>
     );
   }

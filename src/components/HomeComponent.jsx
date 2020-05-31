@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import jakeSoss from '../assets/jake_soss.png'
+import jakeSoss from '../assets/jake_soss.png';
+import headShot from '../assets/headshot.jpg';
 import {
 	HomeTitle,
 	SubTitle,
@@ -10,7 +11,10 @@ import {
 	DisplayContainer,
 	FeaturedRecipes,
 	Banner,
+	HeadShot,
+	Title,
 	JakeSossImg,
+	HomeContent,
 } from './commonStyleComponents/commonDivs';
 import { BackButton } from './commonStyleComponents/commonButtons';
 
@@ -28,20 +32,34 @@ class HomeComponent extends Component {
 	render () {
 		return (
 			<div>
-			  <HomeTitle>
-			    <h1>Hi I'm Jake Soss</h1>
-			    <h3>Aspiring actor, and playwrite</h3>
-			    <br/>
-			    <br/>
-			  </HomeTitle>
-			  <Banner/>
-			  <img image={jakeSoss} width={100} className="jakeSossImg" />
-			  <JakeSossImg 
-			    image={jakeSoss}
+			  <HeadShot 
+			    image={headShot}
 			  />
-			  <SubTitle>
-			    <h2>Here's some of Aaron's featured recipes:</h2>
-			  </SubTitle>
+			 <Title>
+			 	Aspiring Actor | Jake Soss
+			 </Title>
+			 <br />
+			 <br />
+			 <br />
+			 <HomeContent>
+			   <p>
+			 	    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+			 	deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
+			 	similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quide
+			 	m rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque 
+			 	nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor 
+			 	repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut 
+			 	et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delect
+			 	us, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat
+			 	.  
+			 	</p>
+			 	<p>
+
+			 	    Aporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates r
+			 	epudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut 
+			 	reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella.
+			   </p>
+			 </HomeContent>
 			</div>
 		);
 	}

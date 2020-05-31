@@ -1,5 +1,5 @@
 body {
-  background-color: black !important;
+  background-color: #EEEEEE !important;
   color: white !important;
 }
 
@@ -7,8 +7,8 @@ header * {
   display: inline;
 }
 
-header ol {
-  margin: 2vw;
+header ul {
+  margin-bottom: 0;
 }
 
 header {
@@ -19,7 +19,6 @@ header img {
   margin-left: 3vw;
 }
 
-
 .jakeSossImg {
   position: absolute;
   width: 100px;
@@ -28,46 +27,22 @@ header img {
 
 .btn-outline {
   color: white;
-  background-color: black;
-  border-color: white;
   font-weight: bold;
   letter-spacing: 0.05em;
 }
 
 .btn-outline {
   color: white;
-  background-color: black;
-  border-color: white;
   font-weight: bold;
   border-radius: 0;
 }
 
 .btn-outline:hover,
 .btn-outline:active,
-.btn-outline:focus,
-.btn-outline.active {
-  background: white;
-  color: black;
-  border-color: white;
-  
+.btn-outline:focus {
+  border-color: none !important;
+  color: white;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
-
-.btn-colour-1 {
-  color: black;
-  background-color: #004E64;
-  border-color: #004E64;
-  font-weight: bold;
-  letter-spacing: 0.05em;
-  border-radius: 0;
-}
-
-.btn-colour-1:hover,
-.btn-colour-1:active,
-.btn-colour-1:focus,
-.btn-colour-1.active {
-  /* let's darken #004E64 a bit for hover effect */
-  background: #003D4F;
-  color: black;
-  border-color: #003D4F;
-}
