@@ -23,12 +23,19 @@ export const NavButton = styled.button`
 export const BackButton = styled(CommonButton)`
 `;
 
+export const SendButtonWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
+
 export const SendButton = styled.button`
   border: 0 !important;
-  background-color: grey !important;
+  background-color: #3B5EA3 !important;
   width: 100%;
+  height: 50px;
+  width: 203px;
   color: white;
-  border-radius: 5px;
 
   &:hover {
     cursor: pointer !important;

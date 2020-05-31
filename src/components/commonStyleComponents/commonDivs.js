@@ -20,6 +20,20 @@ export const HomeContent = styled.div`
   }
 `;
 
+export const ContactTitle = styled.div`
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-left: 25vw;
+  margin-top: 13vh;
+  width: 50vw;
+  font-weight: bold;
+  font-size: 40px;
+  color: #37352F;
+  height: 60px;
+  border-bottom: 26px solid #E0D9C6;
+`;
+
 export const ShowTitle = styled.div`
   margin-top: 5vh;
   position: relative;
@@ -30,6 +44,34 @@ export const ShowTitle = styled.div`
   font-size: 40px;
   color: #37352F;
   height: 60px;
+`;
+
+export const ContactContent2 = styled.div`
+  margin-top: 30vh;
+  position: absolute;
+  display: flex;
+  margin-left: 13vw;
+  width: 30vw;
+
+  & p {
+    font-size: 20px !important;
+    font-weight: bold !important;
+    color: #37352F;
+  }
+`;
+
+export const ContactContent = styled.div`
+  margin-top: 10vh;
+  position: absolute;
+  display: flex;
+  margin-left: 13vw;
+  width: 30vw;
+
+  & p {
+    font-size: 20px !important;
+    font-weight: bold !important;
+    color: #37352F;
+  }
 `;
 
 export const ShowContent = styled.div`
@@ -209,10 +251,31 @@ export const DishCardWrapper = styled.div`
   }
 `;
 
+export const NameAndEmail = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 40vw;
+  margin-left: 45vw;
+`;
+
+export const MessageBox = styled.div`
+  display: flex;
+  width: 50vw;
+  margin-left: 40vw;
+`;
+
 export const FormGroup = styled.div`
+  color: palevioletred;
+  display: flex;
+  width: 18vw;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+`;
+
+export const FormGroupMessage = styled.div`
 	color: palevioletred;
   display: block;
-	width: 300px;
+	width: 40vw;
 	margin: auto;
 	margin-bottom: 30px;
 `;
@@ -227,18 +290,26 @@ export const Input = styled.input`
 	padding: 0.5em;
 	color: black;
 	background: ${props => props.error ? 'papayawhip' : 'white'};
-	border: 1px solid #ccc!important;
-	border-radius: 10px;
+	border: 1px solid #ccc !important;
 	width: 100%;
+
+  &:focus {
+    outline: none !important;
+  }
 `;
 
 export const TextArea = styled.textarea`
 	padding: 0.5em;
 	color: black;
 	background: ${props => props.error ? 'papayawhip' : 'white'};
-	border: 1px solid #ccc!important;
-	border-radius: 10px;
+	border: 1px solid #ccc !important;
+  margin-bottom: 5vh;
 	width: 100%;
+  height: 20vh;
+
+  &:focus {
+    outline: none !important;
+  }
 `;
 
 export const Message = styled.label`

@@ -43,7 +43,7 @@ class HomeComponent extends Component {
 			 <br />
 			 <HomeContent>
 			   <p>
-			 	    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+			 	&nbsp;&nbsp;&nbsp;&nbsp;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
 			 	deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident,
 			 	similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quide
 			 	m rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque 
@@ -55,7 +55,7 @@ class HomeComponent extends Component {
 			 	</p>
 			 	<p>
 
-			 	    Aporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates r
+			 	&nbsp;&nbsp;&nbsp;&nbsp;Aporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates r
 			 	epudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut 
 			 	reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella.
 			   </p>

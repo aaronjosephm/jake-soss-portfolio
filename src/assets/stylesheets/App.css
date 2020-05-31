@@ -14,6 +14,14 @@ header ul {
 header {
 }
 
+.table {
+  margin-top: 5vh !important;
+  width: 50vw !important;
+  margin-left: 25vw !important;
+  margin-bottom: 15vh !important;
+  color: black !important;
+}
+
 header img {
   height: 50px;
   margin-left: 3vw;
