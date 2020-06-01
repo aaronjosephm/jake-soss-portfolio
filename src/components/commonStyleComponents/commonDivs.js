@@ -110,7 +110,7 @@ export const ContactContent = styled.div`
     width: 90vw;
 
     & p {
-      font-size: 12px !important;
+      font-size: 15px !important;
     }
   }
 `;
@@ -268,7 +268,7 @@ export const PlayImage1 = styled.div`
   position: relative;
 
   @media (max-width: 425px) {
-    width: 60vw;
+    width: 80vw;
   }
 `;
 

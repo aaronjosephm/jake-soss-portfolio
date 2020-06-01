@@ -52,9 +52,6 @@ class HomeComponent extends Component {
 				     </Title>
 			     </div>)
 			   }
-			 <br />
-			 <br />
-			 <br />
 			 <HomeContent>
 			   <p>
 			 	&nbsp;&nbsp;&nbsp;&nbsp;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
