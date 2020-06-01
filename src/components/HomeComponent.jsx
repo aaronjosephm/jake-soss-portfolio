@@ -15,6 +15,7 @@ import {
 	Title,
 	JakeSossImg,
 	HomeContent,
+	HeadWrapper,
 } from './commonStyleComponents/commonDivs';
 import { BackButton } from './commonStyleComponents/commonButtons';
 
@@ -39,9 +40,11 @@ class HomeComponent extends Component {
 				  	<Title>
 				 	    Aspiring Actor | Jake Soss
 				    </Title>
-				    <HeadShot 
-				      image={headShot}
-				     /> 
+				    <HeadWrapper>
+					    <HeadShot 
+					      image={headShot}
+					     /> 
+				     </HeadWrapper>
 			     </div>) : 
 			     (<div>
 				     <HeadShot 

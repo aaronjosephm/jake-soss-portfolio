@@ -315,9 +315,16 @@ export const PlayImage4 = styled.div`
   }
 `;
 
+export const HeadWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+`;
+
 export const HeadShot = styled.div`
   background-image: url(${props => props.image});
-  background-position: 60% 40%;
+  background-position: 60% 0%;
   border: none !important;
   background-size: cover;
   display: flex;
@@ -335,11 +342,12 @@ export const HeadShot = styled.div`
   }
 
   @media (max-width: 425px) {
+    margin-right: 0px !important;
     padding-left: 0px;
     position: relative;
-    height: 100vh;
+    height: 80vh;
     margin-top: 5vh;
-    width: 100vw;
+    width: 90vw;
     left: 0vw;
     top: 0vh;
   }
