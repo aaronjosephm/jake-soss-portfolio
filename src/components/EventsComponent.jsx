@@ -18,6 +18,8 @@ import {
 	PlayImage1,
 	PlayImage3,
 	PlayImage4,
+	ImageWrapper,
+	TitleWrapper,
 } from './commonStyleComponents/commonDivs';
 
 class EventsComponent extends Component {
@@ -43,9 +45,11 @@ class EventsComponent extends Component {
 			         asperiores repellat.
 			    </p>
 			  </ShowContent>
-			  <PlayImage1
-			    image={playImage1}
-			    />
+			   <ImageWrapper>
+				  <PlayImage1
+				    image={playImage1}
+				    />
+			  </ImageWrapper>
 			  <ShowContent>
 			    <p>
 			      &nbsp;&nbsp;&nbsp;&nbsp;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
@@ -69,9 +73,11 @@ class EventsComponent extends Component {
 			         asperiores repellat.
 			    </p>
 			  </ShowContent>
-			  <PlayImage1
-			    image={playImage2}
-			    />
+			  <ImageWrapper>
+				  <PlayImage1
+				    image={playImage2}
+				    />
+			  </ImageWrapper>
 			  <ShowContent>
 			    <p>
 			      &nbsp;&nbsp;&nbsp;&nbsp;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
@@ -95,9 +101,11 @@ class EventsComponent extends Component {
 			         asperiores repellat.
 			    </p>
 			  </ShowContent>
-			  <PlayImage3
-			    image={playImage3}
-			    />
+			  <ImageWrapper>
+				  <PlayImage3
+				    image={playImage3}
+				    />
+			  </ImageWrapper>
 			  <ShowContent>
 			    <p>
 			      &nbsp;&nbsp;&nbsp;&nbsp;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
@@ -121,9 +129,11 @@ class EventsComponent extends Component {
 			         asperiores repellat.
 			    </p>
 			  </ShowContent>
-			  <PlayImage4
-			    image={playImage4}
-			    />
+			  <ImageWrapper>
+				  <PlayImage4
+				    image={playImage4}
+				    />
+			  </ImageWrapper>
 			  <ShowContent>
 			    <p>
 			      &nbsp;&nbsp;At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
@@ -131,9 +141,11 @@ class EventsComponent extends Component {
 			       similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
 			    </p>
 			  </ShowContent>
-			  <EventsTitle2>
-			    Upcoming Shows
-			  </EventsTitle2>
+			  <TitleWrapper>
+				  <EventsTitle2>
+				    Upcoming Shows
+				  </EventsTitle2>
+			  </TitleWrapper>
 			  <table class="table">
 				  <thead>
 				    <tr>

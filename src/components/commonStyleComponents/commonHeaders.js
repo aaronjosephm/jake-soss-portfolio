@@ -1,5 +1,30 @@
 import styled from 'styled-components';
 
+export const MobileNavbar = styled.header`
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3A475B;
+
+  & ul {
+    padding-left: 0px !important;
+  }
+
+  & ol {
+    padding-left: 0px !important;
+  }
+
+  & l1 {
+    margin: 10px;
+  }
+`;
+
 export const Navbar = styled.header`
   position: fixed;
   z-index: 200;

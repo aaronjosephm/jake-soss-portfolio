@@ -5,7 +5,6 @@ import {
 	FormGroup,
 	Label,
 	Input,
-	Message,
 	HomeTitle,
 	ContactTitle,
 	TextArea,
@@ -206,12 +205,11 @@ class ContactComponent extends Component {
 			    <p>
 			      &nbsp;&nbsp;&nbsp;&nbsp;{msg1}
 			    </p>
-			  </ContactContent>
-        <ContactContent2>
-			    <p>
+			    <br />
+			     <p>
 			      &nbsp;&nbsp;&nbsp;&nbsp;{msg2}
 			    </p>
-			  </ContactContent2>
+			  </ContactContent>
 			  {isMobile ?
 			  	this.renderNameAndEmailFields() :
 	        (<NameAndEmail>
@@ -280,9 +278,6 @@ class ContactComponent extends Component {
 			        }
 			        id={'message'}
 			       />
-			      {errorMessages.message &&
-			        <Message>{errorMessages.message}</Message>
-			      }
 			      <SendButtonWrapper>
 				      <SendButton
 				        onClick={(e) => this.sendForm(e)}

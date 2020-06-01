@@ -68,7 +68,6 @@ class HomeComponent extends Component {
 			 	.  
 			 	</p>
 			 	<p>
-
 			 	&nbsp;&nbsp;&nbsp;&nbsp;Aporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates r
 			 	epudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut 
 			 	reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella.

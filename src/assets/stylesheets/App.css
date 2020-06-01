@@ -11,7 +11,18 @@ header ul {
   margin-bottom: 0;
 }
 
-header {
+header img {
+  height: 40px !important;
+  z-index: 250;
+}
+
+.example-appear {
+  opacity: 0.01;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+  transition: opacity .5s ease-in;
 }
 
 .table {
