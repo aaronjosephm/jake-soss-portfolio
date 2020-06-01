@@ -51,7 +51,7 @@ class HomeComponent extends Component {
 				      image={headShot}
 				     /> 
 				     <Title>
-				 	   Aspiring Actor | Jake Soss
+				 	     Actor | Jake Soss
 				     </Title>
 			     </div>)
 			   }
