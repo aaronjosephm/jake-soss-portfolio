@@ -38,7 +38,7 @@ class HomeComponent extends Component {
 			  {isMobile ? 
 			  	(<div>
 				  	<Title>
-				 	    Aspiring Actor | Jake Soss
+				 	    Actor | Jake Soss
 				    </Title>
 				    <HeadWrapper>
 					    <HeadShot 
