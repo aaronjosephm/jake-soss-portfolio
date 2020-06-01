@@ -519,6 +519,8 @@ export const SideBarItem = styled.div`
   width: 95%;
   margin-left: 5px;
   border-bottom: 5px solid #FFFFFF;
+  font-size: 30px;
+  font-weight: bold;
 
   @keyframes fade {
     from {
@@ -539,6 +541,7 @@ export const SideBarButton = styled.div`
   margin-left: 10px;
   width: 90%;
   border-bottom: 1px solid #FFFFFF;
+  font-size: 25px;
 
   @keyframes fade {
     from {
@@ -552,7 +555,6 @@ export const SideBarButton = styled.div`
 
 export const SideBarItems = styled.div`
   display: flex;
-  font-size: 30px;
 `;
 
 export const Close = styled.div`
