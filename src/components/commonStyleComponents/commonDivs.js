@@ -339,8 +339,7 @@ export const HeadShot = styled.div`
     position: relative;
     height: 100vh;
     margin-top: 5vh;
-    margin-left: 10vw;
-    width: 80vw;
+    width: 100vw;
     left: 0vw;
     top: 0vh;
   }
