@@ -81,7 +81,7 @@ class App extends Component {
             </SideBarButton>
           </SideBarItems>
           <Close onClick={() => this.setState({ showSideMenu: false })}>
-           X
+           <p>+</p>
           </Close>
         </SideBar>
         );

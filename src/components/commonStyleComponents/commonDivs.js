@@ -568,9 +568,33 @@ export const SideBarItems = styled.div`
 export const Close = styled.div`
   margin-right: 10px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(45deg);
+  text-align: center;
   font-size: 30px;
   z-index: 250;
-  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+
+  & p {
+    margin-bottom: 5px !important;
+    margin-right: -1px !important;
+  }
+
+  animation-name: spin;
+  animation-duration: 1.5s;
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(1125deg);
+    }
+  }
 `;
 
 export const JakeSossImg = styled.div`
