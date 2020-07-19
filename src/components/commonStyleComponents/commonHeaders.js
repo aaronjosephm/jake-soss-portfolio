@@ -48,11 +48,20 @@ export const NavbarName = styled.div`
   margin-right: 30px;
 `;
 
+export const IconsWrapper = styled.div`
+  width: 10vw;
+  display: flex;
+  justify-content: space-between;
+`;
+
 export const Footer = styled.div`
   height: 62px;
   width: 100%;
   background-color: #3A475B;
+  display: flex;
+  justify-content: center;
   bottom: 0px;
+  align-items: center;
   position: fixed;
   z-index: 100;
 `;

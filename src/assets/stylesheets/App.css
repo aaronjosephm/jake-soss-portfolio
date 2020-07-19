@@ -20,6 +20,14 @@ header img {
   opacity: 0.01;
 }
 
+#icon {
+  color: white !important;
+}
+
+#icon:hover {
+  color: #3B5EA3 !important;
+}
+
 .example-appear.example-appear-active {
   opacity: 1;
   transition: opacity .5s ease-in;

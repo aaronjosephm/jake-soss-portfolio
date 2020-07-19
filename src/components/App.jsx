@@ -6,7 +6,7 @@ import EventsComponent from './EventsComponent';
 import ContactComponent from './ContactComponent';
 import HamburgerIconImg from '../assets/hamburger_icon.png';
 import { NavButton, CommonButtonTest } from './commonStyleComponents/commonButtons';
-import { Navbar, NavbarName, Footer, SubFooter, MobileNavbar } from './commonStyleComponents/commonHeaders';
+import { Navbar, NavbarName, Footer, IconsWrapper, SubFooter, MobileNavbar } from './commonStyleComponents/commonHeaders';
 import { Title, Content, HamburgerIcon, SideBar, Close, SideBarItems, SideBarItem, SideBarButton } from './commonStyleComponents/commonDivs';
 
 const NAV_DEFAULTS = [
@@ -148,7 +148,19 @@ class App extends Component {
       <div>
         {isMobile ? this.renderMobileNavbar() : this.renderNormalNavbar()}
         {this.renderComponent()}
-        <Footer />
+        <Footer>
+          <IconsWrapper>
+            <a href="">
+              <i class="fa fa-linkedin" id="icon" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-facebook" id="icon" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" id="icon" aria-hidden="true"></i>
+            </a>
+          </IconsWrapper>
+        </Footer>
         <SubFooter />
       </div>
     );
